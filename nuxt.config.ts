@@ -17,6 +17,12 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-06-30',
 
+  nitro: {
+    externals: {
+      inline: [/[\\/]node_modules[\\/]nuxt[\\/]dist[\\/]/]
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
